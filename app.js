@@ -6,6 +6,7 @@ const app = express();
 const api = require('./api/index');
 const connectDB = require('./db/connect');
 
+app.use(express.static('./public'));
 app.use(morgan('dev'));
 app.use(express.json());
 
